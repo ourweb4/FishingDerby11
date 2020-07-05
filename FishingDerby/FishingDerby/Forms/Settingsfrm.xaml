@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage Title="Settinga" xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FishingDerby.Forms.Settingsfrm">
+<TableView Intent="Form">
+    <TableRoot>
+        <TableSection>
+            <SwitchCell Text="Use Weight" x:Name="weightflag"></SwitchCell>
+                <TextCell Text="Enter fraction"></TextCell>
+            <EntryCell x:Name="fraction" Placeholder="Enter fraction"></EntryCell>
+        </TableSection>
+    </TableRoot>
+</TableView>
+</ContentPage>

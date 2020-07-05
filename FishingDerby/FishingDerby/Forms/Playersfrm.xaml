@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Class="FishingDerby.Forms.Playersfrm"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Players">
+    <StackLayout>
+        <Entry x:Name="efname" Placeholder="First Name" />
+        <Entry x:Name="elname" Placeholder="Last Name" />
+        <Button Clicked="AddnClicked"
+                HorizontalOptions="Center"
+                Text="Add" />
+        <ListView x:Name="playersListView">
+           
+        </ListView>
+
+
+    </StackLayout>
+</ContentPage>

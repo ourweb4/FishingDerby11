@@ -1,0 +1,29 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FishingDerby.iOS", "FishingDerby.iOS.csproj", "{6FCE48E6-A9CF-4595-BA91-324DBF3AAB04}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+		Ad-Hoc|iPhone = Ad-Hoc|iPhone
+		AppStore|iPhone = AppStore|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6FCE48E6-A9CF-4595-BA91-324DBF3AAB04}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{6FCE48E6-A9CF-4595-BA91-324DBF3AAB04}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{6FCE48E6-A9CF-4595-BA91-324DBF3AAB04}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{6FCE48E6-A9CF-4595-BA91-324DBF3AAB04}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{6FCE48E6-A9CF-4595-BA91-324DBF3AAB04}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{6FCE48E6-A9CF-4595-BA91-324DBF3AAB04}.Debug|iPhone.Build.0 = Debug|iPhone
+		{6FCE48E6-A9CF-4595-BA91-324DBF3AAB04}.Release|iPhone.ActiveCfg = Release|iPhone
+		{6FCE48E6-A9CF-4595-BA91-324DBF3AAB04}.Release|iPhone.Build.0 = Release|iPhone
+		{6FCE48E6-A9CF-4595-BA91-324DBF3AAB04}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{6FCE48E6-A9CF-4595-BA91-324DBF3AAB04}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{6FCE48E6-A9CF-4595-BA91-324DBF3AAB04}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{6FCE48E6-A9CF-4595-BA91-324DBF3AAB04}.AppStore|iPhone.Build.0 = AppStore|iPhone
+	EndGlobalSection
+EndGlobal

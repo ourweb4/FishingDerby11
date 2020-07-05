@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage Title="Game Entry"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FishingDerby.Forms.Gameentryfrm">
+    <StackLayout>
+        <Label x:Name="vname"></Label>
+        <StackLayout Orientation="Horizontal" IsVisible="{Binding inchesflag}">
+            <Entry x:Name="einches" Keyboard="Numeric" Placeholder="Inches"></Entry>
+            <Picker x:Name="FractionPicker" Title="Fraction" SelectedIndexChanged="FractionPicker_OnSelectedIndexChanged"></Picker>
+        </StackLayout>
+        <Picker x:Name="CategoryPicker" Title="Category" SelectedIndexChanged="CategoryPicker_OnSelectedIndexChanged"></Picker>
+
+        <StackLayout Orientation="Horizontal">
+            <Entry x:Name="efname" Placeholder="First Name"></Entry>
+            <Entry x:Name="elname" Placeholder="Last Name"></Entry>
+            <Button Text="Add Player" Clicked="AddPlayer_OnClicked"></Button>
+        </StackLayout>
+        <Label Text="Select Name"></Label>
+            <ListView x:Name="PlayersListView" ItemTapped="PlayersListView_OnItemTapped" ItemSelected="PlayersListView_OnItemSelected"></ListView>
+        
+   
+        <Button Text="Add entry" Clicked="Add_OnClicked"></Button>
+    </StackLayout>
+</ContentPage>

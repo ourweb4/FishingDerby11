@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage Title="Reset" xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FishingDerby.Forms.Resetfrm">
+    <TableView>
+        <TableRoot>>
+        
+        <TableSection>
+            <SwitchCell Text="Categories" x:Name="catsw"></SwitchCell>
+            <SwitchCell Text="Players" x:Name="playersw"></SwitchCell>
+            <SwitchCell Text="Games" x:Name="gamesw"></SwitchCell>
+
+                <ViewCell>
+                <Button Text="Reset" Clicked="Reset_OnClicked"></Button>
+            </ViewCell>
+        </TableSection>
+        </TableRoot>
+        
+        </TableView>
+        
+</ContentPage>

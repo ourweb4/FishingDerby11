@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Class="FishingDerby.Forms.Categoryfrm"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Category">
+
+    <StackLayout>
+        <Entry x:Name="catname"
+               Keyboard="Text"
+               Placeholder="Category Name" />
+        <Button Clicked="Add_OnClicked"
+                HorizontalOptions="Center"
+                Text="Add" />
+        <ListView x:Name="catListView">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding catname}">
+                        <TextCell.ContextActions>
+                            <MenuItem Text="Delete" Clicked="Delete_OnClicked" IsDestructive="True" CommandParameter="{Binding .}"></MenuItem>
+                        </TextCell.ContextActions>
+                    </TextCell>
+
+                </DataTemplate>
+            </ListView.ItemTemplate>
+
+        </ListView>
+    </StackLayout>
+
+</ContentPage>

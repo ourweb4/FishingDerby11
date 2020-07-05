@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Class="FishingDerby.MainPage"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:FishingDerby"
+             Title="Fishing Derby">
+    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+        <Label x:Name="vlabel" HorizontalOptions="Center"></Label>
+
+        <Button Text="Settings" Clicked="Settings_OnClicked"></Button>
+        <Button Clicked="Category_OnClicked" Text="Category" />
+        <Button Clicked="Player_OnClicked" Text="Player" />
+        <Button Clicked="Game_OnClicked" Text="Game" />
+        <Button Clicked="Winner_OnClicked" Text="Winner" />
+        <Button Clicked="Reset_OnClicked" Text="Reset" />
+        <Label Text="(c)2020, Ourweb.net"></Label>
+    </StackLayout>
+
+
+</ContentPage>

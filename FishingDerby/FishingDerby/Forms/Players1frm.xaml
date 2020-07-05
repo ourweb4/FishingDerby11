@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage Title="Player" xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FishingDerby.Forms.Players1frm">
+    
+    <StackLayout>
+        <Entry x:Name="efname" Placeholder="First Name" />
+        <Entry x:Name="elname" Placeholder="Last Name" />
+        <Button Clicked="Add_OnClicked"
+                HorizontalOptions="Center"
+                Text="Add" />
+        <ListView x:Name="PlayerListView">
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="{Binding lname}"></Label>
+                            <Label Text=", "></Label>
+                            <Label Text="{Binding fname}"></Label>
+                        </StackLayout>
+                        <ViewCell.ContextActions>
+                            <MenuItem Text="Delete" Clicked="Delete_OnClicked" IsDestructive="True" CommandParameter="{Binding .}"></MenuItem>
+                        </ViewCell.ContextActions>
+                    </ViewCell>
+
+                </DataTemplate>
+            </ListView.ItemTemplate>
+
+        </ListView>
+
+    </StackLayout>
+</ContentPage>
